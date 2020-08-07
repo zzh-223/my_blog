@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
-profile = os.environ.get('PROJECT_PROFILE', 'develop')
+profile = os.environ.get('MY_BLOG_PROFILE', 'develop')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "my_blog.settings.%s" % profile)
 
 application = get_wsgi_application()
